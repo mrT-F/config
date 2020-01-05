@@ -5,14 +5,16 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 #
-# Lines configured by zsh-newuser-install
+#
 HISTFILE=~/.histfile
 HISTSIZE=50000
 SAVEHIST=10000
 setopt appendhistory autocd extendedglob notify
 unsetopt beep
+# zle use vim keybindings.
 bindkey -v
-# End of lines configured by zsh-newuser-install
+# i'd like ctrl+r reverse search still.
+bindkey '^R' history-incremental-search-backward
 
 # Set prompt.
 PS1="%B%(!.%F{013}!!%f .)%{%F{green}%}%n%{%f%} %{%F{green}%}%~%{%f%}%(?..%F{red}!%f):%b "
@@ -38,6 +40,8 @@ alias ls='ls --color'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+# everyone searches history a lot - ex. hist bazel
+hist() { fc -lm "$@*" 1 }
 
 # zsh completions use colors
 zstyle ':completion:*' list-colors ''
