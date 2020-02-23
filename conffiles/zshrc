@@ -17,7 +17,7 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 
 # Set prompt.
-PS1="%B%(!.%F{013}!!%f .)%{%F{green}%}%n%{%f%} %{%F{green}%}%~%{%f%}%(?..%F{red}!%f):%b "
+PS1="%B%(!.%F{013}!!%f .)%{%F{cyan}%}%n%{%f%} %{%F{cyan}%}%~%{%f%}%(?..%F{red}!%f):%b "
 
 ############## ENV ###########################
 git_ssh_command="ssh -i ~/.ssh/id_github"

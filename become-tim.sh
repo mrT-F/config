@@ -28,8 +28,8 @@ git clone https://github.com/mrT-F/config.git $__dir/config/
 # apt install what we mean, but this script isn't
 # really meant to manage packages,
 # something else should do that.
-sudo apt install -y git curl tmux vim sakura zsh \
-	tint2 openbox lightdm feh feh gtk-theme-switch gtk2-engines \
+sudo apt install -y git curl tmux vim lxterminal zsh \
+	tint2 openbox lightdm feh gtk-theme-switch gtk2-engines \
 	conky
 
 ### install and configure visual studio code
@@ -45,8 +45,9 @@ cp $__confs/conkyrc ~/.conkyrc
 cp $__confs/tmux.conf ~/.tmux.conf
 cp $__confs/zshrc ~/.zshrc
 cp $__confs/xinitrc ~/.xinitrc
-mkdir -p ~/.config/sakura
-cp $__confs/sakura.conf ~/.config/sakura.conf
+
+mkdir -p ~/.config/tint2
+cp $__confs/tint2rc ~/.config/tint2/tint2rc
 
 mkdir -p ~/.config/openbox
 cp $__confs/openbox-autostart ~/.config/openbox/autostart
@@ -54,7 +55,7 @@ cp $__confs/openbox-rc.xml ~/.config/openbox/rc.xml
 cp $__confs/openbox-menu.xml ~/.config/openbox/menu.xml
 
 ### configure defaults
-sudo update-alternatives --set x-terminal-emulator /usr/bin/sakura
+sudo update-alternatives --set x-terminal-emulator /usr/bin/lxterminal
 sudo update-alternatives --set x-session-manager /usr/bin/openbox-session
 sudo update-alternatives --set x-window-manager /usr/bin/openbox
 chsh --shell /usr/bin/zsh $USER
