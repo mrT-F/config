@@ -13,7 +13,7 @@
     <action name="Execute"><execute>x-www-browser</execute></action>
   </item>
   <item label="code">
-    <action name="Execute"><execute>code-insiders</execute></action>
+    <action name="Execute"><execute>code</execute></action>
   </item>
   <!-- This requires the presence of the 'menu' package to work -->
   <menu id="/Debian" />

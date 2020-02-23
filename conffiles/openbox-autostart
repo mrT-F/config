@@ -15,15 +15,22 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
-#Autostart google chrome
-google-chrome-stable &
+
+
+#Autostart default browser
+x-www-browser &
+
 #Autostart xcompmgr to get transparency
 xcompmgr -cfF -t-9 -l-11 -r9 -o.95 -D6 &
+
 #Autostart tint2
 tint2 &
-#Autostart terminal - just use lxterm for now
-lxterminal &
+
+#Autostart terminal.
+x-terminal-emulator &
+
 #Autostart conky for simple procmon
 conky -c ~/.conkyrc &
+
 #Autostart vs code.. options TBD
-code-insiders &
+code &
