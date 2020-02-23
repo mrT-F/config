@@ -805,11 +805,11 @@
   # end of the example
 -->
     <!--Autolaunch full screen chrome on Desktop 2-->
-    <application name="google-chrome">
+    <application class="x-www-browser">
       <desktop>2</desktop>
     </application>
     <!--Autolaunch terminal on Desktop 1-->
-    <application name="lxterminal">
+    <application class="x-terminal-emulator">
       <desktop>1</desktop>
       <position>
         <x>0</x>
@@ -820,9 +820,9 @@
         <height>95%</height>
       </size>
     </application>
-    <!--Autolaunch Conky for procmon on Desktop 1-->
+    <!--Put Conky on all desktops for now-->
     <application name="Conky">
-      <desktop>1</desktop>
+      <desktop>all</desktop>
       <position>
         <x>-50</x>
         <y>-50</y>
@@ -833,12 +833,9 @@
       </size>
     </application>
     <!--Autolaunch vs code on desktop 3 -->
-    <application name="code-insiders">
+    <application name="code">
       <desktop>3</desktop>
-      <size>
-        <width>95%</width>
-        <height>95%</height>
-      </size>
+      <fullscreen>true</fullscreen>
     </application>
   </applications>
 </openbox_config>
