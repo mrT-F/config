@@ -46,6 +46,8 @@ cp $__confs/zshrc ~/.zshrc
 
 ### configure defaults
 sudo update-alternatives --set x-terminal-emulator /usr/bin/sakura
+sudo update-alternatives --set x-session-manager /usr/bin/openbox-session
+sudo update-alternatives --set x-window-manager /usr/bin/openbox
 chsh --shell /usr/bin/zsh $USER
 
 rm -rf $__dir
