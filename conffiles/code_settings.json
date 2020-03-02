@@ -19,5 +19,7 @@
     "terminal.ansiBrightCyan": "#9aedfe",
     "terminal.ansiBrightWhite": "#eff0eb"
   },
-  "workbench.colorTheme": "Default High Contrast"
+  "workbench.colorTheme": "Default High Contrast",
+  "window.zoomLevel": 1.3,
+  "editor.fontSize": 12,
 }
