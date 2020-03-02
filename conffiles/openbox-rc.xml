@@ -804,23 +804,23 @@
 
   # end of the example
 -->
-    <!--Autolaunch full screen chrome on Desktop 2-->
+    <!-- Default 3 desktops - first is for whatever,
+	 just autospawn a browser for now. 2nd is
+	 terminal maximized, third is fullscreen editor.
+    -->
     <application class="x-www-browser">
-      <desktop>2</desktop>
-    </application>
-    <!--Autolaunch terminal on Desktop 1-->
-    <application class="x-terminal-emulator">
       <desktop>1</desktop>
-      <position>
-        <x>0</x>
-        <y>0</y>
-      </position>
-      <size>
-        <width>60%</width>
-        <height>95%</height>
-      </size>
     </application>
-    <!--Put Conky on all desktops for now-->
+    <application class="X-terminal-emulator">
+      <desktop>2</desktop>
+      <maximized>true</maximized>
+    </application>
+    <application name="code">
+      <desktop>3</desktop>
+      <fullscreen>true</fullscreen>
+    </application>
+
+    <!--Put Conky on all desktops.-->
     <application name="Conky">
       <desktop>all</desktop>
       <position>
@@ -829,13 +829,8 @@
       </position>
       <size>
         <width>40%</width>
-        <height>50%</height>
+        <height>75%</height>
       </size>
-    </application>
-    <!--Autolaunch vs code on desktop 3 -->
-    <application name="code">
-      <desktop>3</desktop>
-      <fullscreen>true</fullscreen>
     </application>
   </applications>
 </openbox_config>

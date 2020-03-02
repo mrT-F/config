@@ -30,7 +30,7 @@ git clone https://github.com/mrT-F/config.git $__dir/config/
 # something else should do that.
 sudo apt install -y git curl tmux vim lxterminal zsh \
 	tint2 openbox lightdm feh gtk-theme-switch gtk2-engines \
-	conky
+	conky 
 
 ### install and configure visual studio code
 curl --location https://go.microsoft.com/fwlink/?LinkID=760868 -o $__dir/vscode.deb
@@ -48,6 +48,9 @@ cp $__confs/xinitrc ~/.xinitrc
 
 mkdir -p ~/.config/tint2
 cp $__confs/tint2rc ~/.config/tint2/tint2rc
+
+mkdir -p ~/.config/lxterminal
+cp $__confs/lxterminal.conf ~/.config/lxterminal/lxterminal.conf
 
 mkdir -p ~/.config/openbox
 cp $__confs/openbox-autostart ~/.config/openbox/autostart

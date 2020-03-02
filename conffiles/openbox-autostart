@@ -17,20 +17,13 @@
 #xfce-mcs-manager &
 
 
-#Autostart default browser
+# rc.xml contains the configuration
+# for how and where these appear.
 x-www-browser &
+tint2 &
+x-terminal-emulator &
+conky -c ~/.conkyrc &
+code &
 
 #Autostart xcompmgr to get transparency
 xcompmgr -cfF -t-9 -l-11 -r9 -o.95 -D6 &
-
-#Autostart tint2
-tint2 &
-
-#Autostart terminal.
-x-terminal-emulator &
-
-#Autostart conky for simple procmon
-conky -c ~/.conkyrc &
-
-#Autostart vs code.. options TBD
-code &
